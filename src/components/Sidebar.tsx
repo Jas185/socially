@@ -9,7 +9,6 @@ import { Separator } from "./ui/separator";
 import { LinkIcon, MapPinIcon } from "lucide-react";
 
 async function Sidebar() {
-    
   const authUser = await currentUser();
   if (!authUser) return <UnAuthenticatedSidebar />;
 
